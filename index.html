@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- import: tailwind css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Coupon</title>
+</head>
+<body>
+  <header>
+    <h1 class="text-5xl font-semibold text-center">Your Coupon Site</h1>
+  </header>
+  <div class="flex gap-5 max-w-2xl mx-auto item-center justify-center">
+    <div class="bg-orange-400 p-3 mt-8 rounded-md">
+        <h3 class="text-3xl font-medium mb-2">Your Total Balance is <span id="total-balance">1000</span></h3>
+        <p class="mb-4">Apply below button to get 30% discount</p>
+        <h5 class="text-xl mb-2">Your Updated Balance is ₹ <span id="updated-balance-element">_____</span></h5>
+        <button id="apply-coupon" class="bg-blue-800 rounded-md p-2 font-medium mt-4 text-white">Apply Coupon</button>
+    </div>
+    <div class="bg-green-300 p-3 mt-8 rounded-md">
+      <h3 class="text-2xl font-medium mb-2">Your Total Balance is ₹<br><span id="total-balance"><input id="input-total" type="text"></span></h3>
+      <p class="mb-4">To get 30% discount, apply coupon <span  class="font-semibold text-lg">DISCO30</span></p>
+      <div class="mb-2">
+        <h5>Enter Your Coupon <input id="coupon" type="text"></h5>
+        <button id="apply-coupon-30" class="bg-blue-800 rounded-md p-2 font-medium mt-4 text-white">Apply Coupon</button>
+      </div>
+      <h5 class="text-xl mb-2">Your Updated Balance is ₹ <span id="updated-balance-display">_____</span></h5>
+  </div>
+  </div>
+  <script src="./coupon.js"></script>
+</body>
+</html>
